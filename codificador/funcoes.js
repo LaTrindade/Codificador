@@ -38,9 +38,9 @@ function descriptografar() {
 
 function readText() {
     let pTexto = document.getElementById("pTexto");
-    //let pTexto = document.querySelector("#pTexto");
+    
 alert(pTexto.textContent);
-   // navigator.clipboard.readText(pTexto.textContent).then(() => {alert("Texto copiado: "+pTexto.textContent)});
+   
    navigator.clipboard.writeText(pTexto.textContent);
 }
 
