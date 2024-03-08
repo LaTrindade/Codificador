@@ -19,10 +19,6 @@ body {
     color: var(--cor-quarternaria);
 }
 
-/* div {
-    border: 2px solid var(--cor-quarternaria);
-} */
-
 .codificador {
     margin: 10%;
     display: flex;
@@ -40,17 +36,15 @@ body {
     height: 48px;
 }
 
-textarea::placeholder{
+textarea::placeholder {
     color: var(--cor-quarternaria);
     font-size: 2rem;
-    
+
 }
+
 .codificador__entrada__digitetexto {
-    font-size: 2rem; 
+    font-size: 1.5rem;
     color: var(--cor-quarternaria);
-
-    
-
 }
 
 .codificador__entrada__inferior {
@@ -127,13 +121,11 @@ textarea::placeholder{
     color: var(--cor-quarternaria);
     text-align: center;
     justify-content: center;
-    
 }
 
-.codificador__saida__copiar{
+.codificador__saida__copiar {
     display: flex;
     flex-direction: column;
-  
     width: 100px;
     height: 67px;
     background-color: var(--cor-primaria);
@@ -145,7 +137,41 @@ textarea::placeholder{
     margin: auto;
     text-decoration: none;
     border-color: var(--cor-quarternaria);
-    
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cor-branca);
+}
+
+.rodape__nome {
+    justify-content: center;
+    gap: 2px;
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--cor-quarternaria);
+    align-items: center;
+}
+
+.rodape__links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border: none;
+    width: 10%;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 1rem;
+    padding: 2px;
+    text-decoration: none;
+    color: var(--cor-quarternaria);
+    align-items: center;
+    background-color: var(--cor-branca);
+    margin: 0.2%;
 }
 
 @media (max-width:480px) {
@@ -156,19 +182,16 @@ textarea::placeholder{
         display: flex;
         flex-direction: column;
         justify-content: center;
-      
     }
 
-    .codificador__entrada{
+    .codificador__entrada {
         max-height: 50%;
         git push -u origin main
-
     }
 
     .codificador__entrada__digitetexto {
         margin-top: 20%;
     }
-
 
     .codificador__entrada__aviso {
         margin-top: 30%;
@@ -189,11 +212,10 @@ textarea::placeholder{
         width: 100%;
     }
 
-
     .codificador__saida {
         display: flex;
         flex-direction: column;
-      max-height: 30%;
+        max-height: 30%;
         width: auto;
         position: relative;
     }
@@ -201,8 +223,7 @@ textarea::placeholder{
     .codificador__saida__imagem {
         scale: 0.8;
         opacity: 0.1;
-        z-index: 1; 
-        /* display: none; */
+        z-index: 1;
     }
 
     .codificador__saida__nenhumamensagem {
@@ -212,4 +233,12 @@ textarea::placeholder{
         transform: translate(-50%, -50%);
     }
 
+    .codificador__saida__copiar {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }

@@ -5,6 +5,7 @@ function criptografar() {
 
     let inpTexto = document.getElementById("inpTexto");
     let texto = inpTexto.value;
+
     texto = texto.replaceAll('e', 'enter');
     texto = texto.replaceAll('i', 'imes');
     texto = texto.replaceAll('a', 'ai');
@@ -12,7 +13,6 @@ function criptografar() {
     texto = texto.replaceAll('u', 'ufat');
 
     let pTexto = document.getElementById("pTexto");
-
     pTexto.textContent = texto;
 
 }
@@ -24,24 +24,18 @@ function descriptografar() {
 
     let inpTexto = document.getElementById("inpTexto");
     let texto = inpTexto.value;
-    texto = texto.replaceAll('ufat','u');
-    texto = texto.replaceAll('ober','o');
-    texto = texto.replaceAll('ai','a' );
-    texto = texto.replaceAll('imes','i');
-    texto = texto.replaceAll('enter','e');
-    
+    texto = texto.replaceAll('ufat', 'u');
+    texto = texto.replaceAll('ober', 'o');
+    texto = texto.replaceAll('ai', 'a');
+    texto = texto.replaceAll('imes', 'i');
+    texto = texto.replaceAll('enter', 'e');
+
     let pTexto = document.getElementById("pTexto");
-
     pTexto.textContent = texto;
-
 }
 
 function readText() {
     let pTexto = document.getElementById("pTexto");
-    
-alert(pTexto.textContent);
-   
-   navigator.clipboard.writeText(pTexto.textContent);
+    navigator.clipboard.writeText(pTexto.textContent);
 }
 
- 
