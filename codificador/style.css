@@ -228,7 +228,6 @@ textarea::placeholder {
         height: 400px;
         width: 100%;
         margin-left: 0%;
-
     }
 
     .codificador__saida__imagem {
@@ -297,7 +296,6 @@ textarea::placeholder {
         height: 200px;
         width: 100%;
         margin-left: 0%;
-
     }
 
     .codificador__saida__imagem {
@@ -305,7 +303,7 @@ textarea::placeholder {
     }
 
     .codificador__saida__copiar {
-      display: none;
+        display: none;
     }
 
 }
