@@ -19,7 +19,7 @@ body {
 }
 
 .codificador {
-    margin: 10%;
+    margin: 2%;
     display: flex;
     justify-content: space-between;
 }
@@ -38,14 +38,12 @@ body {
 textarea::placeholder {
     color: var(--cor-quarternaria);
     font-size: 2rem;
-
-
 }
 
 .codificador__entrada__digitetexto {
     font-size: 1.5rem;
     color: var(--cor-quarternaria);
-
+    margin-top: 20%;
 }
 
 .codificador__entrada__inferior {
@@ -226,8 +224,7 @@ textarea::placeholder {
         flex-direction: column;
         position: relative;
         height: 400px;
-        width: 100%;
-        margin-left: 0%;
+        width: 97%;
     }
 
     .codificador__saida__imagem {
@@ -238,7 +235,7 @@ textarea::placeholder {
     .codificador__saida__nenhumamensagem {
         position: absolute;
         top: 50%;
-        left: 50%;
+        left: 45%;
         transform: translate(-50%, -50%);
     }
 
@@ -252,7 +249,7 @@ textarea::placeholder {
     }
 }
 
-@media (min-width:481px max-width:800px) {
+@media (min-width:481px) and (max-width:1024px) {
 
     .codificador {
         padding: 5%;
@@ -262,48 +259,26 @@ textarea::placeholder {
         justify-content: center;
     }
 
-    .codificador__entrada {
-        max-height: 60%;
-    }
-
-    .codificador__entrada__digitetexto {
-        margin-top: 20%;
-    }
-
     .codificador__entrada__aviso {
-        margin-top: 30%;
+        display: flex;
+        justify-content: center;
+        margin-top: 32%;
     }
 
     .codificador__entrada__botoes {
         display: flex;
-        align-items: center;
-        margin-top: 2%;
-    }
-
-    .codificador__entrada__botoes__criptografar {
-        width: 100%;
-    }
-
-    .codificador__entrada__botoes__descriptografar {
-        width: 100%;
-        margin: 1%;
+        justify-content: center;
+        margin: 2%;
     }
 
     .codificador__saida {
         display: flex;
         flex-direction: column;
-        position: relative;
-        height: 200px;
+        height: 400px;
         width: 100%;
-        margin-left: 0%;
     }
 
-    .codificador__saida__imagem {
+    #img {
         display: none;
     }
-
-    .codificador__saida__copiar {
-        display: none;
-    }
-
 }
